@@ -199,6 +199,7 @@ async function getIDS() {
   let data = await getLastStreams()
   let currentUserIds = JSON.parse(currentData.Body.toString())
   let oldUserIds = JSON.parse(data.Body.toString())
+  console.log(currentData)
   let oldIdsInDb = new Map()
   let idsInDb = new Map()
   let finishedStreams = []; 
